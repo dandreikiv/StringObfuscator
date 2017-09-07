@@ -11,6 +11,8 @@ import XCTest
 
 class ObfuscatorTests: XCTestCase {
 	
+	let source = "NL88INGB0123456789"
+	
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,14 +24,13 @@ class ObfuscatorTests: XCTestCase {
     }
     
     func testXORObfuscator() {
-		let source = "NL88INGB0123456789"
+		
 		let obfuscator = StringObfuscator(algorithm: XORObfuscator())
 		
 		testGiven(string: source, convertedBy: obfuscator)
     }
 	
 	func testCahrObfuscator() {
-		let source = "NL88INGB0123456789"
 		let obfuscator = StringObfuscator(algorithm: CharObfuscator())
 		
 		testGiven(string: source, convertedBy: obfuscator)
@@ -45,6 +46,28 @@ class ObfuscatorTests: XCTestCase {
 		} catch ObfuscationError.StringConvertionError {
 			print("Coudn't get data from string")
 		} catch {
+			print("Unexpected exception happend.")
+		}
+	}
+	
+	func testObfuscatedStringReturnsOriginalValue() {
+		let obfuscatedString = ObfuscatedString(algorithm: CharObfuscator())
+		do {
+			try obfuscatedString.setString(string: source)
+			let originalString = try obfuscatedString.originalString()
+			XCTAssertEqual(originalString,  source)
+		}  catch {
+			print("Unexpected exception happend.")
+		}
+	}
+	
+	func testObfuscatedStringNotEqualToOriginal() {
+		let obfuscatedString = ObfuscatedString(algorithm: CharObfuscator())
+		do {
+			try obfuscatedString.setString(string: source)
+			let obfuscated = obfuscatedString.obfusated()
+			XCTAssertNotEqual(obfuscated, source)
+		}  catch {
 			print("Unexpected exception happend.")
 		}
 	}
