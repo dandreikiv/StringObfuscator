@@ -8,7 +8,7 @@
 
 import Foundation
 
-class XORObfuscator: Obfuscator {
+class XORObfuscator: ObfuscationAlgorithm {
 	
 	func obfuscate(source: String) -> String? {
 		return transform(source)

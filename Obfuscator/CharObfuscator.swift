@@ -8,13 +8,19 @@
 
 import Foundation
 
-class CharObfuscator: Obfuscator {
+class CharObfuscator: ObfuscationAlgorithm {
 	
+	// Obfuscated literals separator.
 	private let separator = "#"
 	
+	/**
+	 Reverted map will contain key:value pair created from the obfuscationMap,
+	 where revertedMap key equals to obfuscationMap value, in order to simplify 
+	 backward obfuscation.
+	 */
 	private var revertedMap: [String : String]
 	
-	private let map: [String : String] = [
+	private let obfuscationMap: [String : String] = [
 		"A" : "1",
 		"B" : "2",
 		"C" : "3",
@@ -80,7 +86,7 @@ class CharObfuscator: Obfuscator {
 	
 	init() {
 		revertedMap = [String : String]()
-		for (key, value) in map {
+		for (key, value) in obfuscationMap {
 			revertedMap[value] = key
 		}
 	}
@@ -91,7 +97,7 @@ class CharObfuscator: Obfuscator {
 		for index in source.characters.indices {
 			let character = source[index]
 			let key = String(character)
-			let obfuscatedCharacter = map[key] ?? key
+			let obfuscatedCharacter = obfuscationMap[key] ?? key
 			result.append(obfuscatedCharacter)
 		}
 		return result.joined(separator:separator)
