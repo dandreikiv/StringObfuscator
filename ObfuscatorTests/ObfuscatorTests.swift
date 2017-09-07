@@ -10,7 +10,7 @@ import XCTest
 @testable import Obfuscator
 
 class ObfuscatorTests: XCTestCase {
-    
+	
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,16 +21,21 @@ class ObfuscatorTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testXORObfuscator() {
+		let source = "NL88INGB0123456789"
+		let obfuscator = StringObfuscator(algorithm: XORObfuscator())
+		let obfuscatedSource = obfuscator.obfuscate(source: source)!
+		let unobfuscatedString = obfuscator.unObfuscate(string: obfuscatedSource)!
+		
+		XCTAssertEqual(source, unobfuscatedString)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+	
+	func testCahrObfuscator() {
+		let source = "NL88INGB0123456789"
+		let obfuscator = StringObfuscator(algorithm: CharObfuscator())
+		let obfuscatedSource = obfuscator.obfuscate(source: source)!
+		let unobfuscatedString = obfuscator.unObfuscate(string: obfuscatedSource)!
+		
+		XCTAssertEqual(source, unobfuscatedString)
+	}
 }
