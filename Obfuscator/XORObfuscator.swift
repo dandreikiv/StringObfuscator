@@ -10,18 +10,22 @@ import Foundation
 
 class XORObfuscator: ObfuscationAlgorithm {
 	
-	func obfuscate(source: String) -> String? {
-		return transform(source)
+	func obfuscate(source: String) throws -> String {
+		return try transform(source)
 	}
 	
-	func unObfuscate(source: String) -> String? {
-		return transform(source)
+	func unObfuscate(source: String) throws -> String {
+		return try transform(source)
 	}
 	
-	private func transform(_ source: String) -> String? {
-		let data = source.data(using: .utf8)
-		let key = data?.count ?? 128
-		let original = [UInt8](data!)
+	private func transform(_ source: String) throws -> String {
+		
+		guard let data = source.data(using: .utf8) else {
+			throw ObfuscationError.StringConvertionError
+		}
+		
+		let key = data.count
+		let original = [UInt8](data)
 		var modified = [UInt8](repeating: 0, count: original.count)
 		
 		var index = 0
@@ -31,7 +35,9 @@ class XORObfuscator: ObfuscationAlgorithm {
 		}
 		
 		let newData = Data(modified)
-		let obfuscatedString = String(data: newData, encoding: .utf8)
+		guard let obfuscatedString = String(data: newData, encoding: .utf8) else {
+			throw ObfuscationError.DataConvertionError
+		}
 		
 		return obfuscatedString
 	}

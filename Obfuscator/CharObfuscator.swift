@@ -91,7 +91,7 @@ class CharObfuscator: ObfuscationAlgorithm {
 		}
 	}
 	
-	func obfuscate(source: String) -> String? {
+	func obfuscate(source: String) throws -> String {
 		var result = [String]()
 		
 		for index in source.characters.indices {
@@ -103,7 +103,7 @@ class CharObfuscator: ObfuscationAlgorithm {
 		return result.joined(separator:separator)
 	}
 	
-	func unObfuscate(source: String) -> String? {
+	func unObfuscate(source: String) throws -> String {
 		var result = [String]()
 		
 		for part in source.components(separatedBy: separator) {

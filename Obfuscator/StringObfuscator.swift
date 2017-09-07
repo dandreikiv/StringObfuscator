@@ -8,19 +8,19 @@
 
 import Foundation
 
-class StringObfuscator {
+public class StringObfuscator {
 	
 	private let algorithm: ObfuscationAlgorithm
 	
-	init(algorithm: ObfuscationAlgorithm) {
+	public init(algorithm: ObfuscationAlgorithm) {
 		self.algorithm = algorithm
 	}
 	
-	func obfuscate(source: String) -> String? {
-		return algorithm.obfuscate(source:source);
+	public func obfuscate(source: String) throws -> String {
+		return try algorithm.obfuscate(source:source)
 	}
 	
-	func unObfuscate(string: String) -> String? {
-		return algorithm.unObfuscate(source:string)
+	public func unObfuscate(source: String) throws -> String {
+		return try algorithm.unObfuscate(source:source)
 	}
 }

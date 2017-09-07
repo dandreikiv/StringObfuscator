@@ -17,6 +17,7 @@
 		85C2F47D1F612E9600087179 /* XORObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F47C1F612E9600087179 /* XORObfuscator.swift */; };
 		85C2F47F1F612EA300087179 /* ObfuscationAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F47E1F612EA300087179 /* ObfuscationAlgorithm.swift */; };
 		85C2F4811F6130C200087179 /* CharObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F4801F6130C200087179 /* CharObfuscator.swift */; };
+		85E0B0AE1F61591600E1F06F /* ObfuscatedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E0B0AD1F61591600E1F06F /* ObfuscatedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		85C2F47C1F612E9600087179 /* XORObfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XORObfuscator.swift; sourceTree = "<group>"; };
 		85C2F47E1F612EA300087179 /* ObfuscationAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObfuscationAlgorithm.swift; sourceTree = "<group>"; };
 		85C2F4801F6130C200087179 /* CharObfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharObfuscator.swift; sourceTree = "<group>"; };
+		85E0B0AD1F61591600E1F06F /* ObfuscatedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObfuscatedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				85C2F45C1F6080B400087179 /* AppDelegate.swift */,
 				85C2F45E1F6080B400087179 /* ViewController.swift */,
 				85B0A28F1F614AF6001C4CE1 /* StringObfuscator.swift */,
+				85E0B0AD1F61591600E1F06F /* ObfuscatedString.swift */,
 				85C2F47E1F612EA300087179 /* ObfuscationAlgorithm.swift */,
 				85B0A2911F614BB8001C4CE1 /* Obfuscation Algorithms */,
 				85C2F4601F6080B400087179 /* Main.storyboard */,
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85C2F4811F6130C200087179 /* CharObfuscator.swift in Sources */,
+				85E0B0AE1F61591600E1F06F /* ObfuscatedString.swift in Sources */,
 				85C2F47D1F612E9600087179 /* XORObfuscator.swift in Sources */,
 				85C2F45F1F6080B400087179 /* ViewController.swift in Sources */,
 				85C2F45D1F6080B400087179 /* AppDelegate.swift in Sources */,

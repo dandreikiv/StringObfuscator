@@ -8,10 +8,15 @@
 
 import Foundation
 
-protocol ObfuscationAlgorithm {
+enum ObfuscationError: Error {
+	case StringConvertionError
+	case DataConvertionError
+}
+
+public protocol ObfuscationAlgorithm {
 	// Obfuscates a source string and returns new string.
-	func obfuscate(source: String) -> String?
+	func obfuscate(source: String) throws -> String
 	
 	// Unobfuscates source string and returs orginal string.
-	func unObfuscate(source: String) -> String?
+	func unObfuscate(source: String) throws -> String
 }

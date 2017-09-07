@@ -24,18 +24,28 @@ class ObfuscatorTests: XCTestCase {
     func testXORObfuscator() {
 		let source = "NL88INGB0123456789"
 		let obfuscator = StringObfuscator(algorithm: XORObfuscator())
-		let obfuscatedSource = obfuscator.obfuscate(source: source)!
-		let unobfuscatedString = obfuscator.unObfuscate(string: obfuscatedSource)!
 		
-		XCTAssertEqual(source, unobfuscatedString)
+		testGiven(string: source, convertedBy: obfuscator)
     }
 	
 	func testCahrObfuscator() {
 		let source = "NL88INGB0123456789"
 		let obfuscator = StringObfuscator(algorithm: CharObfuscator())
-		let obfuscatedSource = obfuscator.obfuscate(source: source)!
-		let unobfuscatedString = obfuscator.unObfuscate(string: obfuscatedSource)!
 		
-		XCTAssertEqual(source, unobfuscatedString)
+		testGiven(string: source, convertedBy: obfuscator)
+	}
+	
+	func testGiven(string: String, convertedBy obfuscator: StringObfuscator) {
+		do {
+			let obfuscatedSource = try obfuscator.obfuscate(source: string)
+			let unobfuscatedString = try obfuscator.unObfuscate(source: obfuscatedSource)
+			XCTAssertEqual(string, unobfuscatedString)
+		} catch ObfuscationError.DataConvertionError {
+			print("Coudn't convert data into string")
+		} catch ObfuscationError.StringConvertionError {
+			print("Coudn't get data from string")
+		} catch {
+			print("Unexpected exception happend.")
+		}
 	}
 }
