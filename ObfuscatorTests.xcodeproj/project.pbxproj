@@ -7,38 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		85B0A2901F614AF6001C4CE1 /* StringObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B0A28F1F614AF6001C4CE1 /* StringObfuscator.swift */; };
-		85C2F45D1F6080B400087179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F45C1F6080B400087179 /* AppDelegate.swift */; };
-		85C2F45F1F6080B400087179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F45E1F6080B400087179 /* ViewController.swift */; };
-		85C2F4621F6080B400087179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C2F4601F6080B400087179 /* Main.storyboard */; };
-		85C2F4641F6080B400087179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C2F4631F6080B400087179 /* Assets.xcassets */; };
-		85C2F4671F6080B400087179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C2F4651F6080B400087179 /* LaunchScreen.storyboard */; };
 		85C2F4721F6080B400087179 /* ObfuscatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F4711F6080B400087179 /* ObfuscatorTests.swift */; };
-		85C2F47D1F612E9600087179 /* XORObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F47C1F612E9600087179 /* XORObfuscator.swift */; };
-		85C2F47F1F612EA300087179 /* ObfuscationAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F47E1F612EA300087179 /* ObfuscationAlgorithm.swift */; };
-		85C2F4811F6130C200087179 /* CharObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F4801F6130C200087179 /* CharObfuscator.swift */; };
-		85E0B0AE1F61591600E1F06F /* ObfuscatedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E0B0AD1F61591600E1F06F /* ObfuscatedString.swift */; };
+		85E0B0AF1F619F0F00E1F06F /* StringObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B0A28F1F614AF6001C4CE1 /* StringObfuscator.swift */; };
+		85E0B0B01F619F1400E1F06F /* ObfuscatedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E0B0AD1F61591600E1F06F /* ObfuscatedString.swift */; };
+		85E0B0B11F619F1400E1F06F /* ObfuscationAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F47E1F612EA300087179 /* ObfuscationAlgorithm.swift */; };
+		85E0B0B21F619F1400E1F06F /* XORObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F47C1F612E9600087179 /* XORObfuscator.swift */; };
+		85E0B0B31F619F1400E1F06F /* CharObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F4801F6130C200087179 /* CharObfuscator.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		85C2F46E1F6080B400087179 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 85C2F4511F6080B400087179 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 85C2F4581F6080B400087179;
-			remoteInfo = Obfuscator;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		85B0A28F1F614AF6001C4CE1 /* StringObfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringObfuscator.swift; sourceTree = "<group>"; };
-		85C2F4591F6080B400087179 /* Obfuscator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obfuscator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		85C2F45C1F6080B400087179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85C2F45E1F6080B400087179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		85C2F4611F6080B400087179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		85C2F4631F6080B400087179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		85C2F4661F6080B400087179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		85C2F4681F6080B400087179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85C2F46D1F6080B400087179 /* ObfuscatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObfuscatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C2F4711F6080B400087179 /* ObfuscatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObfuscatorTests.swift; sourceTree = "<group>"; };
 		85C2F4731F6080B400087179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,13 +27,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		85C2F4561F6080B400087179 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		85C2F46A1F6080B400087179 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,6 +40,7 @@
 		85B0A2911F614BB8001C4CE1 /* Obfuscation Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				85C2F47E1F612EA300087179 /* ObfuscationAlgorithm.swift */,
 				85C2F47C1F612E9600087179 /* XORObfuscator.swift */,
 				85C2F4801F6130C200087179 /* CharObfuscator.swift */,
 			);
@@ -87,7 +59,6 @@
 		85C2F45A1F6080B400087179 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85C2F4591F6080B400087179 /* Obfuscator.app */,
 				85C2F46D1F6080B400087179 /* ObfuscatorTests.xctest */,
 			);
 			name = Products;
@@ -96,16 +67,9 @@
 		85C2F45B1F6080B400087179 /* Obfuscator */ = {
 			isa = PBXGroup;
 			children = (
-				85C2F45C1F6080B400087179 /* AppDelegate.swift */,
-				85C2F45E1F6080B400087179 /* ViewController.swift */,
 				85B0A28F1F614AF6001C4CE1 /* StringObfuscator.swift */,
 				85E0B0AD1F61591600E1F06F /* ObfuscatedString.swift */,
-				85C2F47E1F612EA300087179 /* ObfuscationAlgorithm.swift */,
 				85B0A2911F614BB8001C4CE1 /* Obfuscation Algorithms */,
-				85C2F4601F6080B400087179 /* Main.storyboard */,
-				85C2F4631F6080B400087179 /* Assets.xcassets */,
-				85C2F4651F6080B400087179 /* LaunchScreen.storyboard */,
-				85C2F4681F6080B400087179 /* Info.plist */,
 			);
 			path = Obfuscator;
 			sourceTree = "<group>";
@@ -122,23 +86,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		85C2F4581F6080B400087179 /* Obfuscator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 85C2F4761F6080B400087179 /* Build configuration list for PBXNativeTarget "Obfuscator" */;
-			buildPhases = (
-				85C2F4551F6080B400087179 /* Sources */,
-				85C2F4561F6080B400087179 /* Frameworks */,
-				85C2F4571F6080B400087179 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Obfuscator;
-			productName = Obfuscator;
-			productReference = 85C2F4591F6080B400087179 /* Obfuscator.app */;
-			productType = "com.apple.product-type.application";
-		};
 		85C2F46C1F6080B400087179 /* ObfuscatorTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85C2F4791F6080B400087179 /* Build configuration list for PBXNativeTarget "ObfuscatorTests" */;
@@ -150,7 +97,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				85C2F46F1F6080B400087179 /* PBXTargetDependency */,
 			);
 			name = ObfuscatorTests;
 			productName = ObfuscatorTests;
@@ -167,20 +113,13 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Dmytro Andreikiv";
 				TargetAttributes = {
-					85C2F4581F6080B400087179 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7N34RARQJ8;
-						ProvisioningStyle = Automatic;
-					};
 					85C2F46C1F6080B400087179 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7N34RARQJ8;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 85C2F4581F6080B400087179;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = 85C2F4541F6080B400087179 /* Build configuration list for PBXProject "Obfuscator" */;
+			buildConfigurationList = 85C2F4541F6080B400087179 /* Build configuration list for PBXProject "ObfuscatorTests" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -193,23 +132,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				85C2F4581F6080B400087179 /* Obfuscator */,
 				85C2F46C1F6080B400087179 /* ObfuscatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		85C2F4571F6080B400087179 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				85C2F4671F6080B400087179 /* LaunchScreen.storyboard in Resources */,
-				85C2F4641F6080B400087179 /* Assets.xcassets in Resources */,
-				85C2F4621F6080B400087179 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		85C2F46B1F6080B400087179 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,56 +148,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		85C2F4551F6080B400087179 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				85C2F4811F6130C200087179 /* CharObfuscator.swift in Sources */,
-				85E0B0AE1F61591600E1F06F /* ObfuscatedString.swift in Sources */,
-				85C2F47D1F612E9600087179 /* XORObfuscator.swift in Sources */,
-				85C2F45F1F6080B400087179 /* ViewController.swift in Sources */,
-				85C2F45D1F6080B400087179 /* AppDelegate.swift in Sources */,
-				85B0A2901F614AF6001C4CE1 /* StringObfuscator.swift in Sources */,
-				85C2F47F1F612EA300087179 /* ObfuscationAlgorithm.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		85C2F4691F6080B400087179 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E0B0AF1F619F0F00E1F06F /* StringObfuscator.swift in Sources */,
+				85E0B0B11F619F1400E1F06F /* ObfuscationAlgorithm.swift in Sources */,
+				85E0B0B21F619F1400E1F06F /* XORObfuscator.swift in Sources */,
+				85E0B0B31F619F1400E1F06F /* CharObfuscator.swift in Sources */,
+				85E0B0B01F619F1400E1F06F /* ObfuscatedString.swift in Sources */,
 				85C2F4721F6080B400087179 /* ObfuscatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		85C2F46F1F6080B400087179 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 85C2F4581F6080B400087179 /* Obfuscator */;
-			targetProxy = 85C2F46E1F6080B400087179 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		85C2F4601F6080B400087179 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85C2F4611F6080B400087179 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		85C2F4651F6080B400087179 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85C2F4661F6080B400087179 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		85C2F4741F6080B400087179 /* Debug */ = {
@@ -294,7 +186,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -344,7 +235,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -365,44 +255,15 @@
 			};
 			name = Release;
 		};
-		85C2F4771F6080B400087179 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7N34RARQJ8;
-				INFOPLIST_FILE = Obfuscator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmytroandreikiv.Obfuscator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		85C2F4781F6080B400087179 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7N34RARQJ8;
-				INFOPLIST_FILE = Obfuscator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dmytroandreikiv.Obfuscator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		85C2F47A1F6080B400087179 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7N34RARQJ8;
 				INFOPLIST_FILE = ObfuscatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmytroandreikiv.ObfuscatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Obfuscator.app/Obfuscator";
 			};
 			name = Debug;
 		};
@@ -410,34 +271,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7N34RARQJ8;
 				INFOPLIST_FILE = ObfuscatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmytroandreikiv.ObfuscatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Obfuscator.app/Obfuscator";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		85C2F4541F6080B400087179 /* Build configuration list for PBXProject "Obfuscator" */ = {
+		85C2F4541F6080B400087179 /* Build configuration list for PBXProject "ObfuscatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85C2F4741F6080B400087179 /* Debug */,
 				85C2F4751F6080B400087179 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		85C2F4761F6080B400087179 /* Build configuration list for PBXNativeTarget "Obfuscator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				85C2F4771F6080B400087179 /* Debug */,
-				85C2F4781F6080B400087179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
