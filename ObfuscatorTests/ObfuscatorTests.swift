@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import Obfuscator
 
 class ObfuscatorTests: XCTestCase {
 	
