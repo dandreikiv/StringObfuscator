@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CharObfuscator: ObfuscationAlgorithm {
+public class CharObfuscator: ObfuscationAlgorithm {
 	
 	// Obfuscated literals separator.
 	private let separator = "#"
@@ -84,14 +84,14 @@ class CharObfuscator: ObfuscationAlgorithm {
 		"#" : "dash"
 	]
 	
-	init() {
+	public init() {
 		revertedMap = [String : String]()
 		for (key, value) in obfuscationMap {
 			revertedMap[value] = key
 		}
 	}
 	
-	func obfuscate(source: String) throws -> String {
+	public func obfuscate(source: String) throws -> String {
 		var result = [String]()
 		
 		for index in source.characters.indices {
@@ -103,7 +103,7 @@ class CharObfuscator: ObfuscationAlgorithm {
 		return result.joined(separator:separator)
 	}
 	
-	func unObfuscate(source: String) throws -> String {
+	public func unObfuscate(source: String) throws -> String {
 		var result = [String]()
 		
 		for part in source.components(separatedBy: separator) {

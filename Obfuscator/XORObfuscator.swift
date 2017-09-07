@@ -8,13 +8,15 @@
 
 import Foundation
 
-class XORObfuscator: ObfuscationAlgorithm {
+public class XORObfuscator: ObfuscationAlgorithm {
 	
-	func obfuscate(source: String) throws -> String {
+	public init() {}
+	
+	public func obfuscate(source: String) throws -> String {
 		return try transform(source)
 	}
 	
-	func unObfuscate(source: String) throws -> String {
+	public func unObfuscate(source: String) throws -> String {
 		return try transform(source)
 	}
 	
