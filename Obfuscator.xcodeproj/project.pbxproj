@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85B0A2901F614AF6001C4CE1 /* StringObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B0A28F1F614AF6001C4CE1 /* StringObfuscator.swift */; };
 		85C2F45D1F6080B400087179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F45C1F6080B400087179 /* AppDelegate.swift */; };
 		85C2F45F1F6080B400087179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F45E1F6080B400087179 /* ViewController.swift */; };
 		85C2F4621F6080B400087179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C2F4601F6080B400087179 /* Main.storyboard */; };
 		85C2F4641F6080B400087179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C2F4631F6080B400087179 /* Assets.xcassets */; };
 		85C2F4671F6080B400087179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C2F4651F6080B400087179 /* LaunchScreen.storyboard */; };
 		85C2F4721F6080B400087179 /* ObfuscatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F4711F6080B400087179 /* ObfuscatorTests.swift */; };
+		85C2F47D1F612E9600087179 /* XORObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F47C1F612E9600087179 /* XORObfuscator.swift */; };
+		85C2F47F1F612EA300087179 /* ObfuscationAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F47E1F612EA300087179 /* ObfuscationAlgorithm.swift */; };
+		85C2F4811F6130C200087179 /* CharObfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C2F4801F6130C200087179 /* CharObfuscator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85B0A28F1F614AF6001C4CE1 /* StringObfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringObfuscator.swift; sourceTree = "<group>"; };
 		85C2F4591F6080B400087179 /* Obfuscator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obfuscator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C2F45C1F6080B400087179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85C2F45E1F6080B400087179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		85C2F46D1F6080B400087179 /* ObfuscatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObfuscatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C2F4711F6080B400087179 /* ObfuscatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObfuscatorTests.swift; sourceTree = "<group>"; };
 		85C2F4731F6080B400087179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C2F47C1F612E9600087179 /* XORObfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XORObfuscator.swift; sourceTree = "<group>"; };
+		85C2F47E1F612EA300087179 /* ObfuscationAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObfuscationAlgorithm.swift; sourceTree = "<group>"; };
+		85C2F4801F6130C200087179 /* CharObfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharObfuscator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85B0A2911F614BB8001C4CE1 /* Obfuscation Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				85C2F47C1F612E9600087179 /* XORObfuscator.swift */,
+				85C2F4801F6130C200087179 /* CharObfuscator.swift */,
+			);
+			name = "Obfuscation Algorithms";
+			sourceTree = "<group>";
+		};
 		85C2F4501F6080B400087179 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +96,9 @@
 			children = (
 				85C2F45C1F6080B400087179 /* AppDelegate.swift */,
 				85C2F45E1F6080B400087179 /* ViewController.swift */,
+				85B0A28F1F614AF6001C4CE1 /* StringObfuscator.swift */,
+				85C2F47E1F612EA300087179 /* ObfuscationAlgorithm.swift */,
+				85B0A2911F614BB8001C4CE1 /* Obfuscation Algorithms */,
 				85C2F4601F6080B400087179 /* Main.storyboard */,
 				85C2F4631F6080B400087179 /* Assets.xcassets */,
 				85C2F4651F6080B400087179 /* LaunchScreen.storyboard */,
@@ -201,8 +221,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C2F4811F6130C200087179 /* CharObfuscator.swift in Sources */,
+				85C2F47D1F612E9600087179 /* XORObfuscator.swift in Sources */,
 				85C2F45F1F6080B400087179 /* ViewController.swift in Sources */,
 				85C2F45D1F6080B400087179 /* AppDelegate.swift in Sources */,
+				85B0A2901F614AF6001C4CE1 /* StringObfuscator.swift in Sources */,
+				85C2F47F1F612EA300087179 /* ObfuscationAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +436,7 @@
 				85C2F4781F6080B400087179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85C2F4791F6080B400087179 /* Build configuration list for PBXNativeTarget "ObfuscatorTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +445,7 @@
 				85C2F47B1F6080B400087179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
